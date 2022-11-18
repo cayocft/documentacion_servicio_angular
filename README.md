@@ -1,3 +1,5 @@
+# U3 - Uso de un FrameWork de desarrollo Web
+* <b>Aprendizaje Esperado:</b> Utiliza un framework orientado a la reutilización de componentes para el desarrollo rápido de aplicaciones Web
 # Creando servicios en Angular
 
 ## ¿Qué es un Servicio en Angular?
@@ -94,10 +96,6 @@ export class FormularioService {
 Y listo. Nuestro servicio esta configurado y listo para ser programado.
 
 
-
-
-
-
 ### 🤓 ACTIVIDAD: Enviando datos al servicio <b>contacto</b> 🤓
 Vamos a enviar datos capturados de nuestro formulario a un servicio que crearémos.
 Por lo que deberán crear:
@@ -112,3 +110,27 @@ Recordar el laboratorio de componentes y formulario reactivo:
  <br>
  
  Ahora. Vamos a enviar los datos del formulario al servicio que crearemos... DEMOSTRACIÓN
+
+ # Aprendizajes involucrados
+
+* <b>Aprendizaje Esperado:</b> Utiliza un framework orientado a la reutilización de componentes para el desarrollo rápido de aplicaciones Web
+
+* <b>Criterio de Evaluación:</b> Emplea un framework como marco de trabajo estandarizado, para enfrentar y resolver un problema que requiera el desarrollo de una aplicación Web
+
+  * Uso de un framewor de Desarollo
+  * Instalación y configuración de Angular
+  * Uso de componentes
+  * Uso de rutas
+  * Uso de formulario reactivo
+  * Capturar los datos del formulario
+  * Creación y configuración de servicios
+  * Vinculando el servicio con el componente
+
+## Sintetizando:
+
+* ¿Cuál es el comando para crear un proyecto en angular?
+* ¿Cuál es el archivo HTML que debemos limpiar después de crear nuestro proyecto en angular?
+* ¿Cuál es el comando para crear un componente?
+* ¿En qué directorio se configuran las rutas de un componente?
+* ¿Cuál es el comando para crear un servicio?
+* ¿Para qué nos sirve un servicio en angular?
