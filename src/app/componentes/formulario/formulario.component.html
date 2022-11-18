@@ -1,0 +1,108 @@
+<div class="container">
+    <div>
+        <h1>Formulario</h1>
+    </div>
+    <form [formGroup]="formulario">
+        <!-- INPUT PARA NOMBRE-->
+        <div class="form-group">    
+            <div>
+                <label>Nombre</label>
+                <!-- INPUT para el campo nombre-->
+                <input
+                    type="text"
+                    placeholder="Ingresa tu nombre"
+                    formControlName ="nombre"
+                    required
+                >
+                <!-- Mostrar el error para el campo nombre-->
+                <small *ngIf=" formularioReactivo.nombre?.errors?.required && formularioReactivo.nombre.touched ">
+                    El nombre es requerido
+                </small>
+                <small *ngIf=" formularioReactivo.nombre?.errors?.minlength">
+                    El nombre debe contener al menos 4 caracteres 
+                </small>
+            </div>
+        </div>
+        <!-- FIN INPUT PARA NOMBRE-->
+
+        <!-- INPUT PARA APELLIDO-->
+        <div class="form-group">
+            <div>
+                <label>Apellido</label>
+                <!-- INPUT para el campo apellido-->
+                <input
+                    type="text"
+                    placeholder="Ingresa tu apellido"
+                    formControlName ="apellido"
+                    required
+                >
+                <!-- Mostrar el error para el campo apellido-->
+                <small *ngIf=" formularioReactivo.apellido?.errors?.required && formularioReactivo.apellido.touched ">
+                    El apellido es requerido
+                </small>
+                <small *ngIf=" formularioReactivo.apellido?.errors?.minlength">
+                    El apellido debe contener al menos 4 caracteres 
+                </small>
+            </div>
+        </div>
+        <!-- FIN INPUT PARA APELLIDO-->
+
+        <!-- INPUT PARA EDAD-->
+        <div class="form-group">
+            <div>
+                <label>Edad</label>
+                <!-- INPUT para el campo apellido-->
+                <input
+                    type="number"
+                    placeholder="Ingresa tu edad"
+                    formControlName ="edad"
+                    required
+                >
+                <!-- Mostrar el error para el campo apellido-->
+                <small *ngIf=" formularioReactivo.edad?.errors?.required && formularioReactivo.edad.touched ">
+                    La edad es requerida
+                </small>
+                <small *ngIf=" formularioReactivo.edad?.errors?.min">
+                    La edad ser mayor a 4 años
+                </small>
+            </div>
+        </div>
+        <!-- FIN INPUT PARA EDAD-->
+
+        <!-- INPUT PARA EMAIL-->
+        <div class="form-group">
+            <div>
+                <label>Email</label>
+                <!-- INPUT para el campo apellido-->
+                <input
+                    type="text"
+                    placeholder="Ingresa tu Email"
+                    formControlName ="email"
+                    required
+                >
+                <!-- Mostrar el error para el campo apellido-->
+                <small *ngIf=" formularioReactivo.email?.errors?.required && formularioReactivo.email.touched ">
+                    El email es requerido
+                </small>
+            </div>
+        </div>
+        <!-- FIN INPUT PARA EMAIL-->
+
+        <!-- BOTÓN-->
+        <div class="form-group">
+            <div>
+                <button 
+                class="btn btn-primary" 
+                type="submit"
+                (click)="botonEnviar()"
+                [disabled]="!formulario.valid"
+                >Enviar</button>
+            </div>
+        </div>
+        <!-- FIN BOTÓN-->
+        
+    
+    </form>
+</div>
+
+
